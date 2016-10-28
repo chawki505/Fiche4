@@ -3,23 +3,22 @@
  */
 public class Point {
     private double x, y;
-    private String nom;
 
-    public Point(String nom, double x, double y) {
-        this.nom = nom;
+
+    public Point(double x, double y) {
+
         this.x = x;
         this.y = y;
     }
 
-    public Point(String nom, double x) {
+    public Point(double x) {
         this.x = x;
         this.y = x;
-        this.nom = nom;
+
     }
 
     public Point() {
         this.x = this.y = 0;
-        this.nom = "O";
     }
 
     public double getX() {
@@ -30,9 +29,6 @@ public class Point {
         return y;
     }
 
-    public String getNom() {
-        return nom;
-    }
 
     public void deplace(int dx, int dy) {
         x += dx;
