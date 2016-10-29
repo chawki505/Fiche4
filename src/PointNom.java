@@ -6,7 +6,7 @@ public class PointNom extends Point {
 
     private String nom;
 
-    public PointNom(String nom, int x, int y) {
+    public PointNom(String nom, int x, int y) { // Tres Bien 
         super(x, y);
         this.nom = nom;
     }
